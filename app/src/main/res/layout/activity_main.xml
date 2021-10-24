@@ -136,6 +136,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="start|center_vertical"
                             android:text="Keterangan"
+                            android:id="@+id/tvKet"
                             android:textColor="@color/colorPrimaryDark"
                             android:textIsSelectable="true"
                             android:textSize="18sp"
