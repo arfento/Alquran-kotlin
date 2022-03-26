@@ -20,11 +20,11 @@ class AyatAdapter(private val mContext : Context, private val items: List<ModelA
         val data : ModelAyat = items[position]
         holder.tvNomorAyat.text = data.nomor
         holder.tvArabic.text = data.arab
-        holder.tvTerjemahan.text = data.terjemahan
+        holder.tvTerjemahan.text = data.indo
     }
 
     override fun getItemCount(): Int {
-        items.size
+        return items.size
     }
 
     class ViewHolder(v: View) : RecyclerView.ViewHolder(v) {

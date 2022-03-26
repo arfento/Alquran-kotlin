@@ -93,6 +93,8 @@ class MainActivity : AppCompatActivity() {
                 }catch (e : IOException){
                     e.printStackTrace()
                 }
+                fabPlay.setVisibility(View.GONE)
+                fabStop.setVisibility(View.VISIBLE)
 
             })
 
@@ -119,7 +121,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun listAyat(){
-        progressDialog.show()
+        progressDialog!!.show()
         AndroidNetworking.get(Api.URL_LIST_AYAT)
             .addPathParameter("nomor", nomor)
             .setPriority(Priority.MEDIUM)
